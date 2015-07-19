@@ -97,6 +97,37 @@
     }
 }
 
+@media only screen and (max-device-width: 736px) and (orientation: landscape) {
+    /*FRONT PAGE*/
+    #frontpage .name {
+        margin-top: 5px;
+        font-size: 30px;
+        opacity: 0;
+        text-align: center;
+        font-weight: 200
+    }
+
+    #frontpage #logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #frontpage #logo {
+        margin-top: 10px;
+    }
+
+    #frontpage .swissKnife {
+        margin-top: 10px;
+        font-size: 20px;
+        opacity: 0;
+        text-align: center;
+        font-weight: 200;
+        color: #ea7272;
+    }
+
+
+}
+
 /* Smartphones (portrait and landscape)  */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
@@ -152,38 +183,11 @@
         -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 135 0;
     }
 
-    /*FRONT PAGE*/
-    #frontpage .name {
-        opacity: 0;
-        text-align: center;
-        margin-top: 10%;
-        font-size: 34px;
-        font-weight: 200
-    }
-
-    #frontpage #logo img {
-        width: 200px;
-        height: 200px;
-    }
-
-    #frontpage #logo {
-        opacity: 0;
-        margin-top: 10%;
-    }
-
-    #frontpage .swissKnife {
-        opacity: 0;
-        text-align: center;
-        margin-top: 10%;
-        font-size: 25px;
-        font-weight: 200;
-        color: #ea7272;
-    }
 
 }
 
 /* Smartphones (landscape)  */
-@media only screen and (min-width: 321px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (orientation: landscape) {
 
     .mainContainer {
         margin-top: 65px;
@@ -231,6 +235,8 @@
         border-style: solid;
         -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
     }
+
+
 }
 
 /* Smartphones (portrait)  */
@@ -255,6 +261,33 @@
         margin-top: 10%;
     }
 
+    #frontpage #logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #frontpage #logo {
+        opacity: 0;
+        margin-top: 10%;
+    }
+
+    #frontpage .swissKnife {
+        opacity: 0;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 20px;
+        font-weight: 200;
+        color: #ea7272;
+    }
+
+    #frontpage .name {
+        opacity: 0;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 34px;
+        font-weight: 200
+    }
+
 }
 
 /*Nexus 5, Galaxy S3 etc portrait*/
@@ -271,6 +304,23 @@
     #contact h3 {
         font-size: 18px;
         margin-top: 15%;
+    }
+
+    #frontpage .name {
+        font-size: 35px;
+    }
+
+    #frontpage #logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #frontpage .swissKnife {
+        font-size: 25px;
+    }
+
+    #frontpage.mainContainer, #contact.mainContainer {
+        margin-top: 40%;
     }
 
 }
@@ -292,6 +342,22 @@
         margin-top: 3%;
     }
 
+    #frontpage .name {
+        font-size: 35px;
+    }
+
+    #frontpage #logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #frontpage .swissKnife {
+        font-size: 25px;
+    }
+
+    #frontpage.mainContainer, #contact.mainContainer {
+        margin-top: 8%;
+    }
 
 
 }
@@ -320,6 +386,9 @@
     #contact .contactInfo {
         margin-top: 15%;
     }
+    #frontpage.mainContainer, #contact.mainContainer {
+        margin-top: 40%;
+    }
 }
 
 /* iPhone 6 (portrait &amp; landscape) */
@@ -343,6 +412,23 @@
     .section p {
         margin: 3% auto;
     }
+
+    #frontpage .name {
+        font-size: 35px;
+    }
+
+    #frontpage #logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #frontpage .swissKnife {
+        font-size: 25px;
+    }
+
+    #frontpage.mainContainer, #contact.mainContainer {
+        margin-top: 8%;
+    }
 }
 
 /* iPhone 6 (portrait) */
@@ -359,6 +445,25 @@
     #contact h3 {
         font-size: 20px;
         margin-top: 15%;
+    }
+
+    /*FRONT PAGE*/
+
+    #frontpage .name {
+        font-size: 40px;
+    }
+
+    #frontpage #logo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #frontpage .swissKnife {
+        font-size: 25px;
+    }
+
+    #frontpage.mainContainer, #contact.mainContainer {
+        margin-top: 40%;
     }
 
 }
@@ -383,6 +488,25 @@
 
     #contact .contactInfo {
         margin-top: 5%;
+    }
+
+    /*FRONT PAGE*/
+
+    #frontpage .name {
+        font-size: 35px;
+    }
+
+    #frontpage #logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #frontpage .swissKnife {
+        font-size: 25px;
+    }
+
+    #frontpage.mainContainer, #contact.mainContainer {
+        margin-top: 10%;
     }
 
 }
@@ -414,8 +538,15 @@
         margin: 1% auto;
     }
 
-    #contact .contactInfo {
-        margin-top: 3%;
+    #about #logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /*FRONT PAGE*/
+    
+    #frontpage.mainContainer, #contact.mainContainer {
+        margin-top: 8%;
     }
 
 

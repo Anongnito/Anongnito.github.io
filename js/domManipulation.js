@@ -7,22 +7,23 @@ $(document).ready(function() {
         menuElement.eq(1).find('h1').addClass('active');
         value = menuElement.eq(1).find('img').attr('src');
         newValue = value.replace('Normal', 'Active');
-        menuElement.eq(1).find('img').attr('src', newValue)
+        menuElement.eq(1).find('img').attr('src', newValue);
     } else if(window.location.href.indexOf('/portfolio') > 0) {
         menuElement.eq(2).find('h1').addClass('active');
         value = menuElement.eq(2).find('img').attr('src');
         newValue = value.replace('Normal', 'Active');
-        menuElement.eq(2).find('img').attr('src', newValue)
+        menuElement.eq(2).find('img').attr('src', newValue);
     } else if (window.location.href.indexOf('/contact') > 0){
         menuElement.eq(3).find('h1').addClass('active');
         value = menuElement.eq(3).find('img').attr('src');
         newValue = value.replace('Normal', 'Active');
-        menuElement.eq(3).find('img').attr('src', newValue)
+        menuElement.eq(3).find('img').attr('src', newValue);
     } else {
         menuElement.eq(0).find('h1').addClass('active');
         value = menuElement.eq(0).find('img').attr('src');
         newValue = value.replace('Normal', 'Active');
-        menuElement.eq(0).find('img').attr('src', newValue)
+        menuElement.eq(0).find('img').attr('src', newValue);
+        $('nav').css('top','-100px').addClass('navMovement');
     }
 
 
@@ -31,7 +32,7 @@ $(document).ready(function() {
         $(this).find('h1').addClass('active');
         var value = $(this).find('img').attr('src');
         var newValue = value.replace('Normal', 'Active');
-        $(this).find('img').attr('src', newValue)
+        $(this).find('img').attr('src', newValue);
     });
 
     function removeActiveState() {
