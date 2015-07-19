@@ -1,4 +1,3 @@
-
 /* ALL SMARTPHONES IN LANDSCAPE AND PORTRAIT*/
 @media only screen and (max-device-width: 736px) {
     nav {
@@ -47,6 +46,33 @@
         font-weight: normal;
         line-height: 10px;
     }
+
+    #frontpage #logo {
+        -webkit-animation: 4s logo-fade-in;
+        -moz-animation: 4s logo-fade-in;
+        -o-animation: 4s logo-fade-in;
+        animation: 4s logo-fade-in;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    #frontpage .name {
+        -webkit-animation: 2s logo-fade-in;
+        -moz-animation: 2s logo-fade-in;
+        -o-animation: 2s logo-fade-in;
+        animation: 2s logo-fade-in;
+        -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    #frontpage .swissKnife {
+        -webkit-animation: 2s logo-fade-in;
+        -moz-animation: 2s logo-fade-in;
+        -o-animation: 2s logo-fade-in;
+        animation: 2s logo-fade-in;
+        -webkit-animation-delay: 2.5s; /* Chrome, Safari, Opera */
+        animation-delay: 2.5s;
+        -webkit-animation-fill-mode: forwards;
+    }
 }
 
 /* Smartphones (portrait and landscape)  */
@@ -78,6 +104,7 @@
 
     /*ABOUT PAGE*/
     #logo {
+        opacity: 0;
         text-align: center;
         margin-top: 30px;
     }
@@ -98,17 +125,15 @@
         color: #9c9b9b;
     }
 
-
     #section2 {
         border-width: 5px 0 5px 0;
         border-style: solid;
-        -webkit-border-image:  -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 135 0;
+        -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 135 0;
     }
 
-
     /*FRONT PAGE*/
-
-    #frontpage h2 {
+    #frontpage .name {
+        opacity: 0;
         text-align: center;
         margin-top: 10%;
         font-size: 34px;
@@ -125,13 +150,13 @@
     }
 
     #frontpage .swissKnife {
+        opacity: 0;
         text-align: center;
         margin-top: 10%;
         font-size: 25px;
         font-weight: 200;
         color: #ea7272;
     }
-
 
 }
 
@@ -143,12 +168,9 @@
     }
 
     /* CONTACT PAGE */
-
-
     #contact .contactInfo {
         margin-top: 4%;
     }
-
 
     #contact h3 {
         font-size: 15px;
@@ -159,7 +181,6 @@
         font-size: 20px;
         line-height: 28px;
     }
-
 
     /*ABOUT PAGE*/
     #logo {
@@ -186,7 +207,7 @@
     #section2 {
         border-width: 5px 0 5px 0;
         border-style: solid;
-        -webkit-border-image:  -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
+        -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
     }
 }
 
@@ -224,6 +245,7 @@
     #contact .contactInfo {
         margin-top: 20%;
     }
+
     #contact h3 {
         font-size: 18px;
         margin-top: 15%;
@@ -271,7 +293,6 @@
         margin-top: 10%;
     }
 
-
     #contact .contactInfo {
         margin-top: 15%;
     }
@@ -311,7 +332,6 @@
         margin-top: 15%;
     }
 
-
     #contact h3 {
         font-size: 20px;
         margin-top: 15%;
@@ -341,7 +361,6 @@
         margin-top: 5%;
     }
 
-
 }
 
 /* iPhone 6 plus (portrait) */
@@ -355,7 +374,6 @@
         font-size: 29px;
         line-height: 58px;
     }
-
 
 }
 
@@ -383,7 +401,6 @@
 }
 
 @media screen and (max-width: 640px) and (min-width: 384px) and (orientation: landscape) {
-
 
 }
 
@@ -458,7 +475,6 @@
         line-height: 64px;
     }
 
-
     /*ABOUT PAGE*/
     li.section {
         width: 33%;
@@ -475,15 +491,16 @@
         font-size: 18px;
         line-height: 26px;
     }
+
     #section2 {
         border-width: 0 5px 0 5px;
         border-style: solid;
-        -webkit-border-image:  -webkit-gradient(linear, 0 0, 0 100%, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 1 100%;
+        -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 1 100%;
         margin-right: -4px;
         margin-left: -4px;
     }
 
-    #logo img{
+    #logo img {
         width: 300px;
         height: 300px;
     }
@@ -526,13 +543,14 @@
         color: #9c9b9b;
         margin: 5% auto;
     }
+
     #section2 {
         border-width: 5px 0 5px 0;
         border-style: solid;
-        -webkit-border-image:  -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
+        -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
     }
 
-    #logo img{
+    #logo img {
         width: 300px;
         height: 300px;
     }
@@ -542,7 +560,56 @@
         margin-top: 5%;
     }
 
+}
 
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) {
+
+    nav {
+        height: 65px;
+    }
+
+    nav li {
+        margin-top: 5px;
+    }
+
+    nav img {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav h1 {
+        font-size: 18px;
+        line-height: 15px;
+    }
+
+    #contact .socialMedia li {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #contact footer {
+        width: 100%;
+        height: 65px;
+        background: #3d3d3d;
+        text-align: center;
+        border-top: 1px solid #ea7272;
+        position: fixed;
+        bottom: 0;
+        z-index: 5;
+    }
+
+    #contact footer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #contact footer h1 {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 15px;
+    }
 }
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: landscape) {
@@ -589,23 +656,8 @@
     .mainContainer {
         margin-top: 110px;
     }
-    nav {
-        height: 65px;
-    }
 
-    nav li {
-        margin-top: 5px;
-    }
 
-    nav img {
-        width: 35px;
-        height: 35px;
-    }
-
-    nav h1 {
-        font-size: 18px;
-        line-height: 15px;
-    }
 
     #contact h3 {
         font-size: 28px;
@@ -622,9 +674,7 @@
         line-height: 80px;
     }
 
-
     /*ABOUT PAGE*/
-
     #about ul {
         margin-top: 5%;
     }
@@ -639,13 +689,14 @@
         color: #9c9b9b;
         margin: 5% auto;
     }
+
     #section2 {
         border-width: 5px 0 5px 0;
         border-style: solid;
-        -webkit-border-image:  -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
+        -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
     }
 
-    #logo img{
+    #logo img {
         width: 300px;
         height: 300px;
     }
@@ -668,6 +719,18 @@
 
 
 
+@keyframes logo-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-moz-keyframes logo-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes logo-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 
 
