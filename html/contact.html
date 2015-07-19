@@ -1,0 +1,16 @@
+<section id="contact" class="mainContainer">
+    <h3>Please feel free to contact me for any inquiries and do check out Twitter and LinkedIn for more information.</h3>
+    <ul class="contactInfo">
+        <li ng-repeat="contactInfo in contactInfo">
+            <h2><span>{{ contactInfo.name}}</span> {{ contactInfo.value}}</h2>
+        </li>
+    </ul>
+    <footer>
+        <ul class="socialMedia">
+            <li ng-repeat="socialMediaInfo in socialMediaInfo">
+                <a href="{{socialMediaInfo.url}}"><img src="{{socialMediaInfo.img}}"></a>
+            </li>
+        </ul>
+    </footer>
+</section>
+

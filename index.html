@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="anongnitoApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/Main.css">
+    <link rel="stylesheet" type="text/css" href="css/mobilePortrait.css">
+    
+    <script src="js/app/app.js"></script>
+    <script src="js/services/services.js"></script>
+    <script src="js/controller/controller.js"></script>
+    <script src="js/domManipulation.js"></script>
+
+</head>
+<body>
+<nav ng-controller="navigation">
+    <ul>
+        <li class="navElement" ng-repeat="navigation in navigations">
+            <a href="{{ navigation.link }}"><img ng-src="{{navigation.img}}"><h1>{{ navigation.name}}</h1></a>
+        </li>
+    </ul>
+</nav>
+
+<div id="outerContent" class="view-container">
+    <ng-view class="view-frame"></ng-view>
+</div>
+
+</body>
+
+
+
+
+</html>

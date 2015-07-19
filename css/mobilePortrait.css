@@ -1,0 +1,813 @@
+/* Smartphones (portrait and landscape)  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    /* CONTACT PAGE */
+    #contact .contactInfo {
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    #contact .socialMedia li {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #contact .socialMedia {
+        margin-top: 50px;
+    }
+
+    #contact footer {
+        position: fixed;
+        width: 100%;
+        bottom: 20px;
+    }
+
+    #contact .contactInfo span {
+        color: #ea7272;
+    }
+
+    #contact h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #9c9b9b;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    #contact h2 {
+        font-size: 22px;
+        line-height: 45px;
+    }
+
+    /*ABOUT PAGE*/
+    #logo {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #logo img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .section p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        width: 85%;
+        margin: 20px auto;
+        color: #9c9b9b;
+    }
+
+
+    #section2 {
+        border-width: 5px 0 5px 0;
+        border-style: solid;
+        -webkit-border-image:  -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 135 0;
+    }
+
+
+    /*FRONT PAGE*/
+
+    #frontpage h2 {
+        text-align: center;
+        margin-top: 10%;
+        font-size: 34px;
+        font-weight: 200
+    }
+
+    #frontpage #logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #frontpage #logo {
+        margin-top: 10%;
+    }
+
+    #frontpage .swissKnife {
+        text-align: center;
+        margin-top: 10%;
+        font-size: 25px;
+        font-weight: 200;
+        color: #ea7272;
+    }
+
+
+}
+
+/* Smartphones (landscape)  */
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+
+    .mainContainer {
+        margin-top: 65px;
+    }
+
+    /* CONTACT PAGE */
+    nav {
+        height: 50px;
+    }
+
+    nav li {
+        margin-top: 4px;
+    }
+
+    nav h1 {
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    nav img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #contact .contactInfo {
+        margin-top: 4%;
+    }
+
+    #contact footer {
+        position: fixed;
+        width: 100%;
+        bottom: 5px;
+    }
+
+    #contact .socialMedia li {
+        display: inline-block;
+        width: 35%;
+    }
+
+    #contact h3 {
+        font-size: 15px;
+        margin-top: 1%;
+    }
+
+    #contact h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    #contact .socialMedia {
+        margin-top: 0;
+    }
+
+    #contact .socialMedia img {
+        width: 90px;
+        height: 90px;
+    }
+
+    /*ABOUT PAGE*/
+    #logo {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #logo img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .section p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        width: 95%;
+        margin: 20px auto;
+        color: #9c9b9b;
+    }
+
+    #section2 {
+        border-width: 5px 0 5px 0;
+        border-style: solid;
+        -webkit-border-image:  -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
+    }
+}
+
+/* Smartphones (portrait)  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+
+    .mainContainer {
+        margin-top: 85px;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    nav li {
+        margin-top: 4px;
+    }
+
+    nav h1 {
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    nav img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #contact h2 {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    #contact h3 {
+        font-size: 17px;
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    #contact .contactInfo {
+        margin-top: 10%;
+    }
+
+    #contact .socialMedia img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*Nexus 5, Galaxy S3 etc portrait*/
+@media screen and (min-width: 360px) and (max-width: 640px) and (orientation: portrait) {
+    #contact h2 {
+        font-size: 25px;
+        line-height: 46px;
+    }
+
+    #contact .contactInfo {
+        margin-top: 20%;
+    }
+
+    #contact footer {
+        bottom: 10%;
+    }
+
+    #contact .socialMedia li {
+        width: 50%;
+    }
+
+    #contact h3 {
+        font-size: 18px;
+        margin-top: 15%;
+    }
+
+    #contact .socialMedia img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #contact footer {
+        bottom: 5%;
+    }
+}
+
+/*Galaxy S3 etc landscape*/
+@media screen and (max-width: 640px) and (orientation: landscape) and (device-aspect-ratio: 16/9) {
+    #contact h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    #contact h3 {
+        font-size: 18px;
+        width: 90%;
+        margin: 1% auto;
+    }
+
+    #contact .contactInfo {
+        margin-top: 3%;
+    }
+
+    #contact .socialMedia img {
+        width: 110px;
+        height: 110px;
+    }
+
+    #contact .socialMedia li {
+        width: 25%;
+    }
+}
+
+/* iPhone 5 (landscape)*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 71/40) {
+    #contact h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    #contact footer {
+        position: fixed;
+        width: 100%;
+        bottom: 5px;
+    }
+
+    #contact .socialMedia li {
+        width: 25%;
+    }
+}
+
+/* iPhone 5 (portrait) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+    #contact h2 {
+        font-size: 22px;
+        line-height: 45px;
+    }
+
+    #contact h3 {
+        font-size: 17px;
+        margin-top: 10%;
+    }
+
+    #contact .socialMedia img {
+        width: 110px;
+        height: 110px;
+    }
+
+    #contact .contactInfo {
+        margin-top: 15%;
+    }
+}
+
+/* iPhone 6 (portrait &amp; landscape) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* iPhone 6 (landscape) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 667/375) {
+    #contact h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #contact h3 {
+        font-size: 18px;
+        width: 90%;
+        margin: 1% auto;
+    }
+
+    #contact .socialMedia img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #contact .socialMedia li {
+        width: 25%;
+    }
+
+    .section p {
+        margin: 3% auto;
+    }
+}
+
+/* iPhone 6 (portrait) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    #contact h2 {
+        font-size: 26px;
+        line-height: 58px;
+    }
+
+    #contact .contactInfo {
+        margin-top: 15%;
+    }
+
+    #contact footer {
+        bottom: 10%;
+    }
+
+    #contact .socialMedia li {
+        width: 50%;
+    }
+
+    #contact h3 {
+        font-size: 20px;
+        margin-top: 15%;
+    }
+
+    #contact .socialMedia img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #contact footer {
+        bottom: 5%;
+    }
+}
+
+/* iPhone 6 plus (portrait &amp; landscape) */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* iPhone 6 plus (landscape) */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) and (device-aspect-ratio: 16/9) {
+    #contact h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    #contact h3 {
+        font-size: 18px;
+        width: 90%;
+        margin: 1% auto;
+    }
+
+    #contact .socialMedia img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #contact .socialMedia li {
+        width: 25%;
+    }
+
+    #contact .contactInfo {
+        margin-top: 5%;
+    }
+
+
+}
+
+/* iPhone 6 plus (portrait) */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) {
+    #contact h3 {
+        font-size: 22px;
+        margin-top: 15%;
+    }
+
+    #contact h2 {
+        font-size: 29px;
+        line-height: 58px;
+    }
+
+    #contact .socialMedia img {
+        width: 128px;
+        height: 128px;
+    }
+
+}
+
+/*Nexus 5 special landscape treatment*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (orientation: landscape) and (device-aspect-ratio: 16/9) {
+    #contact h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    #contact h3 {
+        font-size: 18px;
+        width: 90%;
+        margin: 1% auto;
+    }
+
+    #contact .contactInfo {
+        margin-top: 3%;
+    }
+
+    #contact .socialMedia img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #contact .socialMedia li {
+        width: 25%;
+    }
+}
+
+/*@media screen and (max-width: 640px) and (min-width: 384px) and (orientation: portrait) {*/
+    /*#contact h2 {*/
+        /*font-size: 25px;*/
+        /*line-height: 46px;*/
+    /*}*/
+/*}*/
+
+/*@media screen and (max-width: 640px) and (min-width: 384px) and (orientation: landscape) {*/
+    /*#contact h2 {*/
+        /*font-size: 24px;*/
+        /*line-height: 34px;*/
+    /*}*/
+
+    /*#contact h3 {*/
+        /*font-size: 18px;*/
+        /*width: 90%;*/
+        /*margin: 1% auto;*/
+    /*}*/
+
+    /*#contact .socialMedia li {*/
+        /*width: 25%;*/
+    /*}*/
+
+/*}*/
+
+/* iPads (portrait and landscape)  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    nav {
+        height: 65px;
+    }
+
+    nav li {
+        margin-top: 5px;
+    }
+
+    nav img {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav h1 {
+        font-size: 18px;
+        line-height: 15px;
+    }
+}
+
+/* iPads (landscape)  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .mainContainer {
+        margin-top: 95px;
+    }
+
+    #contact h3 {
+        font-size: 25px;
+        margin: 6% auto;
+        width: 90%;
+    }
+
+    #contact .contactInfo {
+        margin-top: 10%;
+    }
+
+    #contact h2 {
+        font-size: 35px;
+        line-height: 64px;
+    }
+
+    #contact .socialMedia img {
+        width: 128px;
+        height: 128px;
+    }
+
+    #contact .socialMedia li {
+        display: inline-block;
+        width: 20%;
+    }
+
+    #contact footer {
+        position: fixed;
+        width: 100%;
+        bottom: 5%;
+    }
+
+    /*ABOUT PAGE*/
+    li.section {
+        width: 33%;
+        display: inline-block;
+    }
+
+    #about ul {
+        margin-top: 5%;
+    }
+
+    .section p {
+        width: 90%;
+        margin: 5px auto;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    #section2 {
+        border-width: 0 5px 0 5px;
+        border-style: solid;
+        -webkit-border-image:  -webkit-gradient(linear, 0 0, 0 100%, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 1 100%;
+        margin-right: -4px;
+        margin-left: -4px;
+    }
+
+    #logo img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* iPads (portrait)  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .mainContainer {
+        margin-top: 110px;
+    }
+
+    #contact h3 {
+        font-size: 34px;
+        margin: 10% auto;
+        width: 90%;
+    }
+
+    #contact .contactInfo {
+        margin-top: 15%;
+    }
+
+    #contact h2 {
+        font-size: 50px;
+        line-height: 90px;
+    }
+
+    #contact .socialMedia img {
+        width: 128px;
+        height: 128px;
+    }
+
+    #contact .socialMedia li {
+        display: inline-block;
+        width: 25%;
+    }
+
+    #contact footer {
+        position: fixed;
+        width: 100%;
+        bottom: 10%;
+    }
+    /*ABOUT PAGE*/
+    #about ul {
+        margin-top: 5%;
+    }
+
+    .section p {
+        width: 90%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: left;
+        color: #9c9b9b;
+        margin: 5% auto;
+    }
+    #section2 {
+        border-width: 5px 0 5px 0;
+        border-style: solid;
+        -webkit-border-image:  -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
+    }
+
+    #logo img{
+        width: 300px;
+        height: 300px;
+    }
+
+    #logo {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: landscape) {
+    #contact footer {
+        position: fixed;
+        width: 100%;
+        bottom: 5%;
+    }
+
+    #contact .contactInfo {
+        margin-top: 5%;
+    }
+
+    #contact h3 {
+        /*font-size: 25px;*/
+        margin: 2% auto;
+        width: 90%;
+    }
+
+    /*ABOUT PAGE*/
+    #section2 {
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    #logo {
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    #logo img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .section p {
+        width: 90%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #about ul {
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: portrait) {
+
+    .mainContainer {
+        margin-top: 110px;
+    }
+    nav {
+        height: 65px;
+    }
+
+    nav li {
+        margin-top: 5px;
+    }
+
+    nav img {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav h1 {
+        font-size: 18px;
+        line-height: 15px;
+    }
+
+    #contact h3 {
+        font-size: 28px;
+        margin: 10% auto;
+        width: 90%;
+    }
+
+    #contact .contactInfo {
+        margin-top: 20%;
+    }
+
+    #contact h2 {
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    #contact .socialMedia img {
+        width: 128px;
+        height: 128px;
+    }
+
+    #contact .socialMedia li {
+        display: inline-block;
+        width: 35%;
+    }
+
+    #contact footer {
+        position: fixed;
+        width: 100%;
+        bottom: 10%;
+    }
+
+    /*ABOUT PAGE*/
+
+    #about ul {
+        margin-top: 5%;
+    }
+
+    .section p {
+        width: 90%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: left;
+        color: #9c9b9b;
+        margin: 5% auto;
+    }
+    #section2 {
+        border-width: 5px 0 5px 0;
+        border-style: solid;
+        -webkit-border-image:  -webkit-gradient(linear, 0 0, 100% 0, from(rgba(234, 114, 114, 1)), to(rgba(0, 0, 0, 0))) 121 0;
+    }
+
+    #logo img{
+        width: 300px;
+        height: 300px;
+    }
+
+    #logo {
+        text-align: center;
+        margin-top: 5%;
+    }
+}
+
+/* Large screens  */
+@media only screen and (min-width: 1824px) {
+
+}
+
+/* Desktops and laptops  */
+@media only screen and (min-width: 1224px) {
+
+}
+
+
+
+
+
+
