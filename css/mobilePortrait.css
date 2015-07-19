@@ -549,7 +549,22 @@
         margin-top: 8%;
     }
 
+    #frontpage .name {
+        font-size: 25px;
+    }
 
+    #frontpage #logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #frontpage .swissKnife {
+        font-size: 15px;
+    }
+
+    #frontpage.mainContainer, #contact.mainContainer {
+        margin-top: 10%;
+    }
 }
 
 @media screen and (max-width: 640px) and (min-width: 384px) and (orientation: portrait) {
