@@ -320,7 +320,7 @@
     }
 
     #frontpage.mainContainer, #contact.mainContainer {
-        margin-top: 40%;
+        margin-top: 30%;
     }
 
 }
@@ -387,7 +387,7 @@
         margin-top: 15%;
     }
     #frontpage.mainContainer, #contact.mainContainer {
-        margin-top: 40%;
+        margin-top: 30%;
     }
 }
 
@@ -463,7 +463,7 @@
     }
 
     #frontpage.mainContainer, #contact.mainContainer {
-        margin-top: 40%;
+        margin-top: 30%;
     }
 
 }
@@ -544,7 +544,7 @@
     }
 
     /*FRONT PAGE*/
-    
+
     #frontpage.mainContainer, #contact.mainContainer {
         margin-top: 8%;
     }
