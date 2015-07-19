@@ -7,6 +7,12 @@
         };
 
         var navigations = [
+
+            {
+                name: 'Home',
+                link: '#/',
+                img: 'img/homeNormal.png'
+            },
             {
                 name: 'About',
                 link: '#/about',

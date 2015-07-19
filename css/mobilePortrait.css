@@ -1,3 +1,39 @@
+#frontpage #logo {
+    -webkit-animation: 4s logo-fade-in;
+    -moz-animation: 4s logo-fade-in;
+    -o-animation: 4s logo-fade-in;
+    animation: 4s logo-fade-in;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#frontpage .name {
+    -webkit-animation: 2s logo-fade-in;
+    -moz-animation: 2s logo-fade-in;
+    -o-animation: 2s logo-fade-in;
+    animation: 2s logo-fade-in;
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#frontpage .swissKnife {
+    -webkit-animation: 2s logo-fade-in;
+    -moz-animation: 2s logo-fade-in;
+    -o-animation: 2s logo-fade-in;
+    animation: 2s logo-fade-in;
+    -webkit-animation-delay: 2.5s; /* Chrome, Safari, Opera */
+    animation-delay: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
 /* ALL SMARTPHONES IN LANDSCAPE AND PORTRAIT*/
 @media only screen and (max-device-width: 736px) {
     nav {
@@ -45,33 +81,6 @@
         color: white;
         font-weight: normal;
         line-height: 10px;
-    }
-
-    #frontpage #logo {
-        -webkit-animation: 4s logo-fade-in;
-        -moz-animation: 4s logo-fade-in;
-        -o-animation: 4s logo-fade-in;
-        animation: 4s logo-fade-in;
-        -webkit-animation-fill-mode: forwards;
-    }
-
-    #frontpage .name {
-        -webkit-animation: 2s logo-fade-in;
-        -moz-animation: 2s logo-fade-in;
-        -o-animation: 2s logo-fade-in;
-        animation: 2s logo-fade-in;
-        -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-        -webkit-animation-fill-mode: forwards;
-    }
-
-    #frontpage .swissKnife {
-        -webkit-animation: 2s logo-fade-in;
-        -moz-animation: 2s logo-fade-in;
-        -o-animation: 2s logo-fade-in;
-        animation: 2s logo-fade-in;
-        -webkit-animation-delay: 2.5s; /* Chrome, Safari, Opera */
-        animation-delay: 2.5s;
-        -webkit-animation-fill-mode: forwards;
     }
 }
 
@@ -507,6 +516,35 @@
         width: 300px;
         height: 300px;
     }
+
+    /*FRONT PAGE*/
+
+    #frontpage .name {
+        opacity: 0;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 50px;
+        font-weight: 200
+    }
+
+    #frontpage #logo img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #frontpage #logo {
+        opacity: 0;
+        margin-top: 10%;
+    }
+
+    #frontpage .swissKnife {
+        opacity: 0;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 35px;
+        font-weight: 200;
+        color: #ea7272;
+    }
 }
 
 /* iPads (portrait)  */
@@ -563,6 +601,35 @@
         margin-top: 5%;
     }
 
+    /*FRONT PAGE*/
+
+    #frontpage .name {
+        opacity: 0;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 50px;
+        font-weight: 200
+    }
+
+    #frontpage #logo img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #frontpage #logo {
+        opacity: 0;
+        margin-top: 10%;
+    }
+
+    #frontpage .swissKnife {
+        opacity: 0;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 35px;
+        font-weight: 200;
+        color: #ea7272;
+    }
+
 }
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332){
@@ -615,7 +682,7 @@
     }
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.331)  {
 
     #contact .contactInfo {
         margin-top: 5%;
@@ -654,13 +721,11 @@
     }
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: portrait) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.331) {
 
     .mainContainer {
         margin-top: 110px;
     }
-
-
 
     #contact h3 {
         font-size: 28px;
