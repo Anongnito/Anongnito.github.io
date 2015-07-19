@@ -615,7 +615,7 @@
     }
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: landscape) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) {
 
     #contact .contactInfo {
         margin-top: 5%;
