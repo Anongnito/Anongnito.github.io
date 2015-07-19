@@ -1,10 +1,22 @@
-/* Smartphones (portrait and landscape)  */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
-    /* CONTACT PAGE */
-    #contact .contactInfo {
-        text-align: center;
-        margin-top: 90px;
+/* ALL SMARTPHONES IN LANDSCAPE AND PORTRAIT*/
+@media only screen and (max-device-width: 736px) {
+    nav {
+        height: 50px;
+    }
+
+    nav li {
+        margin-top: 4px;
+    }
+
+    nav h1 {
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    nav img {
+        width: 25px;
+        height: 25px;
     }
 
     #contact .socialMedia li {
@@ -12,14 +24,38 @@
         width: 50%;
     }
 
-    #contact .socialMedia {
-        margin-top: 50px;
+    #contact footer {
+        width: 100%;
+        height: 50px;
+        background: #3d3d3d;
+        text-align: center;
+        border-top: 1px solid #ea7272;
+        position: fixed;
+        bottom: 0;
+        z-index: 5;
     }
 
-    #contact footer {
-        position: fixed;
-        width: 100%;
-        bottom: 20px;
+    #contact footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #contact footer h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        color: white;
+        font-weight: normal;
+        line-height: 10px;
+    }
+}
+
+/* Smartphones (portrait and landscape)  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    /* CONTACT PAGE */
+    #contact .contactInfo {
+        text-align: center;
+        margin-top: 90px;
     }
 
     #contact .contactInfo span {
@@ -107,38 +143,12 @@
     }
 
     /* CONTACT PAGE */
-    nav {
-        height: 50px;
-    }
 
-    nav li {
-        margin-top: 4px;
-    }
-
-    nav h1 {
-        font-size: 16px;
-        line-height: 15px;
-    }
-
-    nav img {
-        width: 25px;
-        height: 25px;
-    }
 
     #contact .contactInfo {
         margin-top: 4%;
     }
 
-    #contact footer {
-        position: fixed;
-        width: 100%;
-        bottom: 5px;
-    }
-
-    #contact .socialMedia li {
-        display: inline-block;
-        width: 35%;
-    }
 
     #contact h3 {
         font-size: 15px;
@@ -150,14 +160,6 @@
         line-height: 28px;
     }
 
-    #contact .socialMedia {
-        margin-top: 0;
-    }
-
-    #contact .socialMedia img {
-        width: 90px;
-        height: 90px;
-    }
 
     /*ABOUT PAGE*/
     #logo {
@@ -195,24 +197,6 @@
         margin-top: 85px;
     }
 
-    nav {
-        height: 50px;
-    }
-
-    nav li {
-        margin-top: 4px;
-    }
-
-    nav h1 {
-        font-size: 16px;
-        line-height: 15px;
-    }
-
-    nav img {
-        width: 25px;
-        height: 25px;
-    }
-
     #contact h2 {
         font-size: 22px;
         line-height: 40px;
@@ -228,10 +212,6 @@
         margin-top: 10%;
     }
 
-    #contact .socialMedia img {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 /*Nexus 5, Galaxy S3 etc portrait*/
@@ -244,28 +224,11 @@
     #contact .contactInfo {
         margin-top: 20%;
     }
-
-    #contact footer {
-        bottom: 10%;
-    }
-
-    #contact .socialMedia li {
-        width: 50%;
-    }
-
     #contact h3 {
         font-size: 18px;
         margin-top: 15%;
     }
 
-    #contact .socialMedia img {
-        width: 120px;
-        height: 120px;
-    }
-
-    #contact footer {
-        bottom: 5%;
-    }
 }
 
 /*Galaxy S3 etc landscape*/
@@ -285,14 +248,6 @@
         margin-top: 3%;
     }
 
-    #contact .socialMedia img {
-        width: 110px;
-        height: 110px;
-    }
-
-    #contact .socialMedia li {
-        width: 25%;
-    }
 }
 
 /* iPhone 5 (landscape)*/
@@ -302,15 +257,6 @@
         line-height: 28px;
     }
 
-    #contact footer {
-        position: fixed;
-        width: 100%;
-        bottom: 5px;
-    }
-
-    #contact .socialMedia li {
-        width: 25%;
-    }
 }
 
 /* iPhone 5 (portrait) */
@@ -325,10 +271,6 @@
         margin-top: 10%;
     }
 
-    #contact .socialMedia img {
-        width: 110px;
-        height: 110px;
-    }
 
     #contact .contactInfo {
         margin-top: 15%;
@@ -353,15 +295,6 @@
         margin: 1% auto;
     }
 
-    #contact .socialMedia img {
-        width: 90px;
-        height: 90px;
-    }
-
-    #contact .socialMedia li {
-        width: 25%;
-    }
-
     .section p {
         margin: 3% auto;
     }
@@ -378,27 +311,12 @@
         margin-top: 15%;
     }
 
-    #contact footer {
-        bottom: 10%;
-    }
-
-    #contact .socialMedia li {
-        width: 50%;
-    }
 
     #contact h3 {
         font-size: 20px;
         margin-top: 15%;
     }
 
-    #contact .socialMedia img {
-        width: 120px;
-        height: 120px;
-    }
-
-    #contact footer {
-        bottom: 5%;
-    }
 }
 
 /* iPhone 6 plus (portrait &amp; landscape) */
@@ -417,15 +335,6 @@
         font-size: 18px;
         width: 90%;
         margin: 1% auto;
-    }
-
-    #contact .socialMedia img {
-        width: 90px;
-        height: 90px;
-    }
-
-    #contact .socialMedia li {
-        width: 25%;
     }
 
     #contact .contactInfo {
@@ -447,10 +356,6 @@
         line-height: 58px;
     }
 
-    #contact .socialMedia img {
-        width: 128px;
-        height: 128px;
-    }
 
 }
 
@@ -471,40 +376,16 @@
         margin-top: 3%;
     }
 
-    #contact .socialMedia img {
-        width: 90px;
-        height: 90px;
-    }
-
-    #contact .socialMedia li {
-        width: 25%;
-    }
 }
 
-/*@media screen and (max-width: 640px) and (min-width: 384px) and (orientation: portrait) {*/
-    /*#contact h2 {*/
-        /*font-size: 25px;*/
-        /*line-height: 46px;*/
-    /*}*/
-/*}*/
+@media screen and (max-width: 640px) and (min-width: 384px) and (orientation: portrait) {
 
-/*@media screen and (max-width: 640px) and (min-width: 384px) and (orientation: landscape) {*/
-    /*#contact h2 {*/
-        /*font-size: 24px;*/
-        /*line-height: 34px;*/
-    /*}*/
+}
 
-    /*#contact h3 {*/
-        /*font-size: 18px;*/
-        /*width: 90%;*/
-        /*margin: 1% auto;*/
-    /*}*/
+@media screen and (max-width: 640px) and (min-width: 384px) and (orientation: landscape) {
 
-    /*#contact .socialMedia li {*/
-        /*width: 25%;*/
-    /*}*/
 
-/*}*/
+}
 
 /* iPads (portrait and landscape)  */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -522,6 +403,35 @@
     }
 
     nav h1 {
+        font-size: 18px;
+        line-height: 15px;
+    }
+
+    #contact .socialMedia li {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #contact footer {
+        width: 100%;
+        height: 65px;
+        background: #3d3d3d;
+        text-align: center;
+        border-top: 1px solid #ea7272;
+        position: fixed;
+        bottom: 0;
+        z-index: 5;
+    }
+
+    #contact footer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #contact footer h1 {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-weight: normal;
         font-size: 18px;
         line-height: 15px;
     }
@@ -548,21 +458,6 @@
         line-height: 64px;
     }
 
-    #contact .socialMedia img {
-        width: 128px;
-        height: 128px;
-    }
-
-    #contact .socialMedia li {
-        display: inline-block;
-        width: 20%;
-    }
-
-    #contact footer {
-        position: fixed;
-        width: 100%;
-        bottom: 5%;
-    }
 
     /*ABOUT PAGE*/
     li.section {
@@ -616,21 +511,6 @@
         line-height: 90px;
     }
 
-    #contact .socialMedia img {
-        width: 128px;
-        height: 128px;
-    }
-
-    #contact .socialMedia li {
-        display: inline-block;
-        width: 25%;
-    }
-
-    #contact footer {
-        position: fixed;
-        width: 100%;
-        bottom: 10%;
-    }
     /*ABOUT PAGE*/
     #about ul {
         margin-top: 5%;
@@ -666,11 +546,6 @@
 }
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (orientation: landscape) {
-    #contact footer {
-        position: fixed;
-        width: 100%;
-        bottom: 5%;
-    }
 
     #contact .contactInfo {
         margin-top: 5%;
@@ -747,21 +622,6 @@
         line-height: 80px;
     }
 
-    #contact .socialMedia img {
-        width: 128px;
-        height: 128px;
-    }
-
-    #contact .socialMedia li {
-        display: inline-block;
-        width: 35%;
-    }
-
-    #contact footer {
-        position: fixed;
-        width: 100%;
-        bottom: 10%;
-    }
 
     /*ABOUT PAGE*/
 

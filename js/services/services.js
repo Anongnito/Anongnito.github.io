@@ -55,12 +55,12 @@
             {
                 name: 'Twitter',
                 url: 'https://twitter.com/Eions',
-                img: 'img/Twitter.png'
+                img: 'img/twitter.png'
             },
             {
                 name: 'LinkedIn',
                 url: 'https://uk.linkedin.com/in/agoahas',
-                img: 'img/LinkedIn.png'
+                img: 'img/linkedin.png'
             }
         ]
     })

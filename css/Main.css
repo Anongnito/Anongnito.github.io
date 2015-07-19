@@ -43,12 +43,6 @@ nav h1 {
     color: #ea7272;
 }
 
-.burgerMenu {
-    float: left;
-    margin-top: 12px;
-    margin-left: 12px;
-}
-
 #contact .contactInfo {
     text-align: center;
     margin-top: 150px;
@@ -73,15 +67,15 @@ h2 {
 
 }
 
-#contact .socialMedia img {
-    width: 128px;
-    height: 128px;
-}
+/*#contact .socialMedia img {*/
+    /*width: 128px;*/
+    /*height: 128px;*/
+/*}*/
 
-#contact .socialMedia {
-    margin-top: 0;
-    text-align: center;
-}
+/*#contact .socialMedia {*/
+    /*margin-top: 0;*/
+    /*text-align: center;*/
+/*}*/
 
 #contact .contactInfo span {
     color: #ea7272;

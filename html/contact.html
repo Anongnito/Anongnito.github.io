@@ -8,7 +8,7 @@
     <footer>
         <ul class="socialMedia">
             <li ng-repeat="socialMediaInfo in socialMediaInfo">
-                <a href="{{socialMediaInfo.url}}"><img src="{{socialMediaInfo.img}}"></a>
+                <a href="{{ socialMediaInfo.url }}"><img ng-src="{{socialMediaInfo.img}}"><h1>{{ socialMediaInfo.name}}</h1></a>
             </li>
         </ul>
     </footer>
