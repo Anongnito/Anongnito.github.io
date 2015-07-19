@@ -16,7 +16,7 @@ nav {
     text-align: center;
     border-bottom: 1px solid #ea7272;
     position: fixed;
-    top: 0;
+    top: -50px;
     z-index: 5;
 }
 

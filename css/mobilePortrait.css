@@ -1,4 +1,4 @@
-#frontpage #logo {
+.logoFadeIn {
     -webkit-animation: 4s logo-fade-in;
     -moz-animation: 4s logo-fade-in;
     -o-animation: 4s logo-fade-in;
@@ -9,7 +9,7 @@
     animation-fill-mode: forwards;
 }
 
-#frontpage .name {
+.nameFadeIn {
     -webkit-animation: 2s logo-fade-in;
     -moz-animation: 2s logo-fade-in;
     -o-animation: 2s logo-fade-in;
@@ -21,13 +21,26 @@
     animation-fill-mode: forwards;
 }
 
-#frontpage .swissKnife {
+.swissKnifeFadeIn {
     -webkit-animation: 2s logo-fade-in;
     -moz-animation: 2s logo-fade-in;
     -o-animation: 2s logo-fade-in;
     animation: 2s logo-fade-in;
     -webkit-animation-delay: 2.5s; /* Chrome, Safari, Opera */
     animation-delay: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.navMovement {
+    -webkit-animation: 0.5s ease-in nav-slide-in;
+    -moz-animation: 0.5s ease-in nav-slide-in;
+    -o-animation: 0.5s nav-slide-in;
+    animation: 0.5s nav-slide-in;
+    -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
+    animation-delay: 4s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
@@ -798,6 +811,43 @@
 @-webkit-keyframes logo-fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@keyframes nav-slide-in {
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+    60% {
+        opacity: 1;
+        top: 15px;
+    }
+    80% {
+        top: -5px;
+    }
+    100% {
+        top: 0;
+    }
+}
+@-moz-keyframes nav-slide-in {
+    from { top: -50px; }
+    to { top: 0; }
+}
+@-webkit-keyframes nav-slide-in {
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+    60% {
+        opacity: 1;
+        top: 5px;
+    }
+    80% {
+        top: -5px;
+    }
+    100% {
+        top: 0;
+    }
 }
 
 
