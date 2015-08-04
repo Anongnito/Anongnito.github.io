@@ -26,11 +26,12 @@
 
         }
     });
-    app.controller('portfolio', function($scope) {
+    app.controller('portfolio', function($scope, portfolioService) {
+        $scope.portfolioInfo = [];
         init();
 
         function init() {
-
+            $scope.portfolioInfo = portfolioService.getPortfolioInfo();
         }
     });
     app.controller('contact', function($scope, contactInfoService, socialMediaService) {
@@ -38,11 +39,10 @@
         $scope.socialMediaInfo = [];
 
         init();
-            $scope.contactInfo = contactInfoService.getContactInfo();
-            $scope.socialMediaInfo = socialMediaService.getSocialMediaInfo();
 
         function init() {
-
+            $scope.contactInfo = contactInfoService.getContactInfo();
+            $scope.socialMediaInfo = socialMediaService.getSocialMediaInfo();
         }
     });
 })();

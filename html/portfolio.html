@@ -1,3 +1,7 @@
 <section id="portfolio" class="mainContainer">
-    <h1>Portfolio</h1>
+        <ul class="portfolioList">
+            <li ng-repeat="portfolioInfo in portfolioInfo">
+                <a href="{{ portfolioInfo.url }}"><img ng-src="{{portfolioInfo.img}}"></a>
+            </li>
+        </ul>
 </section>

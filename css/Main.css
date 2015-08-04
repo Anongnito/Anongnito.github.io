@@ -139,3 +139,17 @@ h2 {
     height: 100%;
     width: 100%;
 }
+
+#portfolio .portfolioList li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#portfolio .portfolioList img {
+    width: auto;
+}
+
+#portfolio .portfolioList {
+    margin: 0 auto;
+    text-align: center;
+}

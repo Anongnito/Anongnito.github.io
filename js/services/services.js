@@ -69,5 +69,39 @@
                 img: 'img/linkedin.png'
             }
         ]
+    });
+
+    app.service('portfolioService', function() {
+        this.getPortfolioInfo = function() {
+            return portfolioInfo;
+        };
+
+        var portfolioInfo = [
+            {
+                name: 'Argos',
+                url: 'http://www.elion.ee',
+                img: 'img/Argos.png'
+            },
+            {
+                name: 'RedEye',
+                url: 'https://uk.linkedin.com/in/agoahas',
+                img: 'img/RedEye.png'
+            },
+            {
+                name: 'Elion',
+                url: 'http://www.level1.ee',
+                img: 'img/Elion.png'
+            },
+            {
+                name: 'Frostnova',
+                url: 'http://www.level1.ee',
+                img: 'img/Frostnova1.png'
+            },
+            {
+                name: 'Level1',
+                url: 'http://www.level1.ee',
+                img: 'img/Level1.png'
+            }
+        ]
     })
 })();
