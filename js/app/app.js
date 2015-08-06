@@ -1,24 +1,29 @@
-var app = angular.module('anongnitoApp', ['ngRoute','ui.router', 'ngAnimate']);
+var app = angular.module('anongnitoApp', ['ngRoute', 'ui.router', 'ngAnimate', 'ui.bootstrap']);
 
-app.config(function($routeProvider) {
-    $routeProvider
-        .when('/', {
+
+app.config(function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+        .state('/', {
+            url: '/',
             controller: 'front',
             templateUrl: 'html/frontpage.html'
         })
-        .when('/about', {
+        .state('about', {
+            url: '/about',
             controller: 'about',
             templateUrl: 'html/about.html'
         })
-        .when('/portfolio', {
+        .state('portfolio', {
+            url: '/portfolio',
             controller: 'portfolio',
             templateUrl: 'html/portfolio.html'
         })
-        .when('/contact', {
+        .state('contact', {
+            url: '/contact',
             controller: 'contact',
             templateUrl: 'html/contact.html'
         })
-        .otherwise({redirectTo: '/'});
 
 });
 

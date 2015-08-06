@@ -1,7 +1,7 @@
 <section id="portfolio" class="mainContainer">
         <ul class="portfolioList">
             <li ng-repeat="portfolioInfo in portfolioInfo">
-                <a href="{{ portfolioInfo.url }}"><img ng-src="{{portfolioInfo.img}}"></a>
+                <img ng-click="open(); setSelectedCompanyIndexFunction($index)" ng-src="{{portfolioInfo.img}}">
             </li>
         </ul>
 </section>

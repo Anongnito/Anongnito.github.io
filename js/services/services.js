@@ -76,32 +76,81 @@
             return portfolioInfo;
         };
 
+        this.getSelectedCompanyIndex = function() {
+            return selectedCompanyIndex;
+        };
+        this.setSelectedCompanyIndex = function(index) {
+            selectedCompanyIndex = index;
+        };
+
         var portfolioInfo = [
             {
                 name: 'Argos',
-                url: 'http://www.elion.ee',
                 img: 'img/Argos.png'
             },
             {
                 name: 'RedEye',
-                url: 'https://uk.linkedin.com/in/agoahas',
                 img: 'img/RedEye.png'
             },
             {
                 name: 'Elion',
-                url: 'http://www.level1.ee',
                 img: 'img/Elion.png'
             },
             {
                 name: 'Frostnova',
-                url: 'http://www.level1.ee',
                 img: 'img/Frostnova1.png'
             },
             {
                 name: 'Level1',
-                url: 'http://www.level1.ee',
                 img: 'img/Level1.png'
             }
-        ]
-    })
+            ];
+        var selectedCompanyIndex = 0;
+    });
+
+    app.service('portfolioContentService', function() {
+        this.getContentInfo = function() {
+            return contentInfo;
+        };
+
+        var contentInfo = [
+            {
+                id: 0,
+                heading: 'Argos',
+                textContent: 'This is Argos'
+            },
+            {
+                id: 1,
+                heading: 'RedEye',
+                textContent: 'This is RedEye'
+            },
+            {
+                id: 2,
+                heading: 'Elion',
+                textContent: 'This is Elion'
+            },
+            {
+                id: 3,
+                heading: 'Frostnova',
+                textContent: 'This is Frostnova'
+            },
+            {
+                id: 4,
+                heading: 'Level1',
+                textContent: 'This is Level1'
+            }
+
+        ];
+    });
+
+    app.directive('disableNgAnimate', ['$animate', function($animate) {
+        return {
+            restrict: 'A',
+            link: function(scope, element) {
+                $animate.enabled(false, element);
+            }
+        };
+    }]);
+
+
 })();
