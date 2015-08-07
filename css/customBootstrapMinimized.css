@@ -273,8 +273,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-warning {
     color: #fff;
-    background-color: #f0ad4e;
-    border-color: #eea236;
+    background-color: #e16f6e;
+    border-color: #e16f6e;
 }
 
 .btn-warning.focus, .btn-warning:focus {
@@ -496,17 +496,12 @@ button.close {
     position: relative;
     width: auto;
     margin: 10px;
+    color: #ffffff;
 }
 
 .modal-content {
     position: relative;
-    background-color: #fff;
-    border: 1px solid #999;
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 6px;
-    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-    -webkit-background-clip: padding-box;
+    background-color: transparent;
     background-clip: padding-box;
     outline: 0;
 }
@@ -523,7 +518,7 @@ button.close {
 }
 
 .modal-backdrop.in {
-    opacity: .5;
+    opacity: .9;
     filter: alpha(opacity=50);
 }
 
@@ -550,7 +545,6 @@ button.close {
 .modal-footer {
     padding: 15px;
     text-align: right;
-    border-top: 1px solid #e5e5e5;
 }
 
 .modal-footer .btn + .btn {

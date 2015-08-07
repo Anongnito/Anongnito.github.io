@@ -1,10 +1,24 @@
 <section ng-controller="portfolio">
-    <div class="modal-body">
+    <div class="modal-body" style=" font-family: 'Open Sans', sans-serif;">
 
-        <h1>STUFF IN MODAL</h1>
         <ul class="portfolioList">
             <li ng-repeat="portfolioContentInfo in portfolioContentInfo | filter: {id: selectedCompanyIndex}">
-                <h1>{{portfolioContentInfo.heading}}</h1>
+                <h1 style="font-size: 50px;margin-bottom: 50px; text-align: center">{{portfolioContentInfo.heading}}</h1>
+                <p>{{portfolioContentInfo.textContent}}</p>
+                <h2 style="color: #e16f6e;margin-top: 30px;font-size: 15px;font-weight: 400;text-align: center;font-style: italic;">{{portfolioContentInfo.quote}}</h2>
+            </li>
+        </ul>
+        <ul class="modalList" style="margin-top: 25px">
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Optimizely</li>
+            <li>Monetate</li>
+            <li>Adobe Photoshop</li>
+        </ul>
+
+        <ul class="portfolioList" style="margin-top: 35px">
+            <li ng-repeat="portfolioContentInfo in portfolioContentInfo | filter: {id: selectedCompanyIndex}">
                 <p>{{portfolioContentInfo.textContent}}</p>
             </li>
         </ul>

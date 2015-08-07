@@ -104,7 +104,7 @@
                 name: 'Level1',
                 img: 'img/Level1.png'
             }
-            ];
+        ];
         var selectedCompanyIndex = 0;
     });
 
@@ -117,7 +117,8 @@
             {
                 id: 0,
                 heading: 'Argos',
-                textContent: 'This is Argos'
+                textContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel magna pellentesque, fermentum risus non, vestibulum dolor.',
+                quote: '"Ago was an amazing person, he did all the best he could and brought great valu to the company."'
             },
             {
                 id: 1,
