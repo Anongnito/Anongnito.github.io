@@ -190,6 +190,12 @@ footer {
     content: "• ";
 }
 
+#about video {
+    width: 640px;
+    height: 320px;
+    padding: 50px;
+}
+
 /* ------------------------------------------------------------------------- */
 
 .view-container {
