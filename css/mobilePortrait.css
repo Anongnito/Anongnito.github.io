@@ -135,6 +135,11 @@
         font-weight: 200;
         color: #ea7272;
     }
+
+    #about video {
+       padding: 0;
+    }
+
 }
 
 /* Smartphones (portrait and landscape)  */
