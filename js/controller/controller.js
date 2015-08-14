@@ -3,10 +3,16 @@
 
     app.controller('navigation', function($scope, navigationService) {
         $scope.navigations = [];
+
+        if(window.matchMedia("(max-width: 1024px)").matches) {
+            $scope.isMobile = ["Yes"];
+        } else {
+            $scope.isMobile = ["No"];
+        }
         init();
 
         function init() {
-            $scope.navigations = navigationService.getNavigation();
+            $scope.navigations = navigationService.getNavigation()
         }
 
     });

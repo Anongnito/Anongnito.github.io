@@ -30,7 +30,7 @@
 <nav ng-controller="navigation">
     <ul>
         <li class="navElement" ng-repeat="navigation in navigations">
-            <a href="{{ navigation.link }}"><img ng-src="{{navigation.img}}"><h1>{{ navigation.name}}</h1></a>
+            <a href="{{ navigation.link }}"><img ng-src="{{isMobile == 'Yes' && navigation.img}}"><h1>{{ navigation.name}}</h1></a>
         </li>
     </ul>
 </nav>
