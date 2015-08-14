@@ -197,6 +197,7 @@ footer {
 #about video {
     width: 640px;
     height: 320px;
+    background-color: black !important;
 }
 
 /* ------------------------------------------------------------------------- */
