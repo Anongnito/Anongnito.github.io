@@ -190,10 +190,13 @@ footer {
     content: "• ";
 }
 
+#about {
+    text-align: center;
+}
+
 #about video {
     width: 640px;
     height: 320px;
-    padding: 50px;
 }
 
 /* ------------------------------------------------------------------------- */

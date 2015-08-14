@@ -56,6 +56,10 @@
         width: 100%;
     }
 
+    #about {
+        text-align: center;
+    }
+
 }
 
 /* ALL SMARTPHONES IN LANDSCAPE AND PORTRAIT*/
@@ -135,7 +139,8 @@
     }
 
     #about video {
-       padding: 0;
+        width: 560px;
+        height: 280px;
     }
 
 }
