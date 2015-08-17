@@ -34,11 +34,11 @@ $(document).ready(function() {
             var value = $(this).find('img').attr('src');
             var newValue = value.replace('Normal', 'Active');
             $(this).find('img').attr('src', newValue);
+            window.scrollTo(0, 0);
         });
 
     } else {
-        $('.navElement img').attr('src','')
-            .attr('ng-src','');
+        $('.navElement img').remove();
         if(window.location.href.indexOf('/about') > 0) {
             menuElement.eq(1).find('h1').addClass('active');
         } else if(window.location.href.indexOf('/portfolio') > 0) {
@@ -48,6 +48,7 @@ $(document).ready(function() {
         } else {
             menuElement.eq(0).find('h1').addClass('active');
         }
+        $('nav').css('top', '-100px').addClass('navMovement');
 
         menuElement.bind('click', function() {
             removeActiveState();
