@@ -53,6 +53,7 @@ $(document).ready(function() {
         menuElement.bind('click', function() {
             removeActiveState();
             $(this).find('h1').addClass('active');
+            window.scrollTo(0, 0);
         });
     }
 
