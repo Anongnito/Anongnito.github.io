@@ -509,7 +509,7 @@ button.close {
 .modal-backdrop {
     position: fixed;
     z-index: 1040;
-    background-color: #000;
+    background-color: #FFF;
 }
 
 .modal-backdrop.fade {
