@@ -4,6 +4,41 @@ $(document).ready(function() {
         var value;
         var newValue;
 
+
+        mobileNavManip();
+        menuElement.bind('click', function() {
+            removeActiveState();
+            $(this).find('h1').addClass('active');
+            var value = $(this).find('img').attr('src');
+            var newValue = value.replace('Normal', 'Active');
+            $(this).find('img').attr('src', newValue);
+            window.scrollTo(0, 0);
+        });
+
+    } else {
+        deskNavManip();
+        menuElement.bind('click', function() {
+            removeActiveState();
+            $(this).find('h1').addClass('active');
+            window.scrollTo(0, 0);
+        });
+    }
+
+    function deskNavManip() {
+        $('.navElement img').remove();
+        if(window.location.href.indexOf('/about') > 0) {
+            menuElement.eq(1).find('h1').addClass('active');
+        } else if(window.location.href.indexOf('/portfolio') > 0) {
+            menuElement.eq(2).find('h1').addClass('active');
+        } else if(window.location.href.indexOf('/contact') > 0) {
+            menuElement.eq(3).find('h1').addClass('active');
+        } else {
+            menuElement.eq(0).find('h1').addClass('active');
+            $('nav').css('top', '-100px').addClass('navMovement');
+        }
+    }
+
+    function mobileNavManip() {
         if(window.location.href.indexOf('/about') > 0) {
             menuElement.eq(1).find('h1').addClass('active');
             value = menuElement.eq(1).find('img').attr('src');
@@ -26,35 +61,6 @@ $(document).ready(function() {
             menuElement.eq(0).find('img').attr('src', newValue);
             $('nav').css('top', '-100px').addClass('navMovement');
         }
-
-
-        menuElement.bind('click', function() {
-            removeActiveState();
-            $(this).find('h1').addClass('active');
-            var value = $(this).find('img').attr('src');
-            var newValue = value.replace('Normal', 'Active');
-            $(this).find('img').attr('src', newValue);
-            window.scrollTo(0, 0);
-        });
-
-    } else {
-        $('.navElement img').remove();
-        if(window.location.href.indexOf('/about') > 0) {
-            menuElement.eq(1).find('h1').addClass('active');
-        } else if(window.location.href.indexOf('/portfolio') > 0) {
-            menuElement.eq(2).find('h1').addClass('active');
-        } else if(window.location.href.indexOf('/contact') > 0) {
-            menuElement.eq(3).find('h1').addClass('active');
-        } else {
-            menuElement.eq(0).find('h1').addClass('active');
-        }
-        $('nav').css('top', '-100px').addClass('navMovement');
-
-        menuElement.bind('click', function() {
-            removeActiveState();
-            $(this).find('h1').addClass('active');
-            window.scrollTo(0, 0);
-        });
     }
 
     function removeActiveState() {
@@ -65,6 +71,15 @@ $(document).ready(function() {
             var srcValue = $(allElements[i]).attr('src');
             var newValue = srcValue.replace('Active', 'Normal');
             $(allElements[i]).attr('src', newValue);
+        }
+    }
+
+    window.onhashchange = function() {
+        removeActiveState();
+        if(window.matchMedia("(max-width: 1024px)").matches) {
+            mobileNavManip();
+        } else {
+            deskNavManip();
         }
     }
 });
