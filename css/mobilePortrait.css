@@ -65,6 +65,7 @@
 
 /* ALL SMARTPHONES IN LANDSCAPE AND PORTRAIT*/
 @media only screen and (max-device-width: 736px) {
+
     nav {
         height: 50px;
     }
@@ -109,6 +110,13 @@
         font-weight: normal;
         line-height: 15px;
     }
+
+    #portfolio .portfolioList img {
+        width: 320px;
+    }
+    .dotLine {
+        width: 320px;
+    }
 }
 
 @media only screen and (max-device-width: 736px) and (orientation: landscape) {
@@ -142,6 +150,13 @@
     #about video {
         width: 560px;
         height: 280px;
+    }
+
+    #portfolio .portfolioList img {
+        width: 512px;
+    }
+    .dotLine {
+        width: 512px;
     }
 
 }
@@ -206,6 +221,16 @@
         height: 160px;
         padding: 20px;
     }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 25px;
+    }
+
+
 
 
 }
@@ -311,6 +336,8 @@
         font-size: 34px;
         font-weight: 200
     }
+
+
 
 }
 
@@ -548,6 +575,8 @@
         margin-top: 10%;
     }
 
+
+
 }
 
 /* iPhone 6 plus (portrait) */
@@ -659,6 +688,10 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 15px;
+    }
+    #outerContent {
+        height: 100%;
+        width: 80%;
     }
 }
 

@@ -86,23 +86,23 @@
         var portfolioInfo = [
             {
                 name: 'Argos',
-                img: 'img/Argos.png'
+                img: 'img/ArgosWebsite.png'
             },
             {
                 name: 'RedEye',
-                img: 'img/RedEye.png'
+                img: 'img/RedEyeWebsite.png'
             },
             {
                 name: 'Elion',
-                img: 'img/Elion.png'
+                img: 'img/ElionWebsite.png'
             },
             {
                 name: 'Frostnova',
-                img: 'img/Frostnova1.png'
+                img: 'img/EnnemuistneWebsite.png'
             },
             {
                 name: 'Level1',
-                img: 'img/Level1.png'
+                img: 'img/Level1Website.png'
             }
         ];
         var selectedCompanyIndex = 0;
