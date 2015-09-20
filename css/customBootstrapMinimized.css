@@ -468,6 +468,12 @@ button.close {
     z-index: 1050;
     -webkit-overflow-scrolling: touch;
     outline: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body.modal-open {
+    overflow: hidden !important;
 }
 
 .modal.fade .modal-dialog {

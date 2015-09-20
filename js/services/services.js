@@ -117,13 +117,18 @@
             {
                 id: 0,
                 heading: 'Argos',
-                textContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel magna pellentesque, fermentum risus non, vestibulum dolor.',
+                textContent: 'Morbi aliquam vestibulum libero, vitae sodales odio tincidunt vel. Morbi at justo molestie, semper est nec, dapibus enim. Donec placerat odio quis tellus tempus posuere. Cras pretium tincidunt risus, vel congue mauris accumsan id. Cras eget convallis nulla. Nam imperdiet malesuada mauris, ac mattis risus bibendum eget. Curabitur feugiat quam tortor, et laoreet nisl fermentum non. Integer consequat pellentesque mauris, non aliquam mi semper quis. Nam a sapien dui. Nullam quis tortor quis erat facilisis tempus sit amet ac libero. Morbi aliquam vestibulum libero, vitae sodales odio tincidunt vel. Morbi at justo molestie, semper est nec, dapibus enim. Donec placerat odio quis tellus tempus posuere. Cras pretium tincidunt risus, vel congue mauris accumsan id. Cras eget convallis nulla. Nam imperdiet malesuada mauris, ac mattis risus bibendum eget. Curabitur feugiat quam tortor, et laoreet nisl fermentum non. Integer consequat pellentesque mauris, non aliquam mi semper quis. Nam a sapien dui. Nullam quis tortor quis erat facilisis tempus sit amet ac libero',
                 quote: '"Ago was an amazing person, he did all the best he could and brought great valu to the company."'
             },
             {
                 id: 1,
                 heading: 'RedEye',
-                textContent: 'This is RedEye'
+                textContent1: 'RedEye is an international digital marketing company in London, which specialises in marketing automation, email marketing and user experience. Working on big clients e.g. Radley, Monarch, Haven Holidays, Hays Recruitment and Skype.',
+                quote: '"Always ensuring to meet the deadlines, Ago very quickly became one of the core team member within the UX Division"' +
+                ' - Tasin Reza. Head of Optimisation and Design',
+                textContent2: 'Developing pages with jQuery for A/B/N testing, personalisation, taking Photoshop designs and converting them into HTML/CSS assets, assessing feasibility of making adjustments to pages based on user experience findings, working closely with the company\'s user experience team to generate ideas for optimising clients\' websites, consulting clients.',
+                bulletPoints: ['Advanced knowledge of JavaScript','jQuery','HTML4/5','CSS2/3','Adobe Photoshop','A/B Testing Tools: Optimizely, Monetate, Adobe Test & Target','Excellent communication skills for liaising with clients\' development and design teams', 'Bonus: Creating a Web-Crawler with unlimited filters in Java, integrated with a MySQL database to save data into'],
+                workDone: ['http://agoahas.co.uk/IMG/hays.jpg', 'http://agoahas.co.uk/IMG/monarch.jpg']
             },
             {
                 id: 2,
@@ -142,6 +147,16 @@
             }
 
         ];
+    });
+
+    app.service('frontpageService', function() {
+        this.getFrontpageState = function() {
+            return frontpageState;
+        };
+        this.setFrontpageState = function() {
+            frontpageState = true;
+        };
+        var frontpageState = false;
     });
 
     app.directive('disableNgAnimate', ['$animate', function($animate) {

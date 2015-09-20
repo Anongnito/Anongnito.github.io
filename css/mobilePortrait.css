@@ -3,19 +3,25 @@
     -moz-animation: 4s logo-fade-in;
     -o-animation: 4s logo-fade-in;
     animation: 4s logo-fade-in;
+    -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+    animation-delay: 5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
+
+
 .nameFadeIn {
-    -webkit-animation: 2s logo-fade-in;
-    -moz-animation: 2s logo-fade-in;
-    -o-animation: 2s logo-fade-in;
-    animation: 2s logo-fade-in;
-    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
+    -webkit-animation-name: logo-fade-in, colorChange, fontShadow;
+    -webkit-animation-duration: 2s, 4s, 4s;
+    -moz-animation-name: logo-fade-in, fontShadow;
+    -moz-animation-duration: 2s, 2s, 4s;
+    animation-name: logo-fade-in, colorChange, fontShadow;
+    animation-duration: 2s, 2s, 2s;
+    -webkit-animation-delay:  1.5s, 5s, 7s; /* Chrome, Safari, Opera */
+    animation-delay:  1.5s, 5s, 7s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
@@ -23,12 +29,28 @@
 }
 
 .swissKnifeFadeIn {
-    -webkit-animation: 2s logo-fade-in;
-    -moz-animation: 2s logo-fade-in;
-    -o-animation: 2s logo-fade-in;
-    animation: 2s logo-fade-in;
-    -webkit-animation-delay: 2.5s; /* Chrome, Safari, Opera */
-    animation-delay: 2.5s;
+    -webkit-animation-name: logo-fade-in, fontShadow;
+    -webkit-animation-duration: 2s, 4s;
+    -moz-animation-name: logo-fade-in, fontShadow;
+    -moz-animation-duration: 2s, 4s;
+    animation-name: logo-fade-in, fontShadow;
+    animation-duration: 2s, 4s;
+    -webkit-animation-delay: 3s, 6s; /* Chrome, Safari, Opera */
+    animation-delay:  3s, 6s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+.fontShadow {
+    -webkit-animation: 4s fontShadow;
+    -moz-animation: 4s fontShadow;
+    -o-animation: 4s fontShadow;
+    animation: 4s fontShadow;
+    -webkit-animation-delay: 3.5s; /* Chrome, Safari, Opera */
+    animation-delay: 3.5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
@@ -40,8 +62,8 @@
     -moz-animation: 0.5s ease-in nav-slide-in;
     -o-animation: 0.5s nav-slide-in;
     animation: 0.5s nav-slide-in;
-    -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-    animation-delay: 4s;
+    -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+    animation-delay: 5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
@@ -1014,6 +1036,32 @@
 
 }
 
+@keyframes colorChange {
+    from { color: black}
+    to { color: white }
+}
+
+@-webkit-keyframes colorChange {
+    from { color: black}
+    to { color: white }
+}
+@-moz-keyframes colorChange {
+    from { color: black}
+    to { color: white }
+}
+
+@keyframes fontShadow {
+    from { text-shadow: 0 0 0 #000;}
+    to { text-shadow: 1px 1px 5px #000; }
+}
+@-moz-keyframes fontShadow {
+    from { text-shadow: 0 0 0 #000;}
+    to { text-shadow: 1px 1px 5px #000; }
+}
+@-webkit-keyframes fontShadow {
+    from { text-shadow: 0 0 0 #000;}
+    to { text-shadow: 1px 1px 5px #000; }
+}
 
 
 @keyframes logo-fade-in {

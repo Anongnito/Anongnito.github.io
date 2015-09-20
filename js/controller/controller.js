@@ -18,11 +18,22 @@
     });
 
 
-    app.controller('front', function($scope) {
+    app.controller('front', function($scope, frontpageService) {
+        $scope.homepageVisited = frontpageService.getFrontpageState();
+
         init();
-
         function init() {
+            if($scope.homepageVisited == false) {
+                document.getElementsByClassName('name')[0].className += (' nameFadeIn');
+                document.getElementsByClassName('swissKnife')[0].className += (' swissKnifeFadeIn');
+            } else {
+                document.getElementsByClassName('name')[0].className += (' nameLoaded');
+                document.getElementsByClassName('swissKnife')[0].className += (' swissKnifeLoaded');
+                document.getElementById('intro').className -= (' logoFadeIn');
+                document.getElementById('intro').style.opacity = 1;
 
+            }
+            frontpageService.setFrontpageState();
         }
     });
     app.controller('about', function($scope) {
