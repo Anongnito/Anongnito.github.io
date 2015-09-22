@@ -1,10 +1,31 @@
-<section id="contact" class="mainContainer">
+<section id="contact" class="mainContainer" ng-controller="contact">
     <h3>Please feel free to contact me for any inquiries and do check out Twitter and LinkedIn for more information.</h3>
     <ul class="contactInfo">
         <li ng-repeat="contactInfo in contactInfo">
             <h2><span>{{ contactInfo.name}}</span> {{ contactInfo.value}}</h2>
         </li>
     </ul>
+
+    <form name="contactForm" novalidate>
+        <!-- USER NAME -->
+        <input type="text" placeholder="Your Name" name="name" ng-model="user.name" ng-model-options="{ updateOn: 'blur' }" required><br />
+        <span style="color:red" ng-show="contactForm.name.$dirty && contactForm.name.$invalid">
+        <span ng-show="contactForm.name.$error.required">Username is required.</span>
+        </span>
+        <!-- EMAIL NAME -->
+        <input type="email" placeholder="Your E-Mail" name="email" ng-model="user.email" required/><br />
+        <span style="color:red" ng-show="contactForm.email.$dirty && contactForm.email.$invalid">
+          <span ng-show="contactForm.email.$error.required">Email is required.</span>
+          <span ng-show="contactForm.email.$error.email">Invalid email address.</span>
+        </span>
+        <!-- USER NAME -->
+
+        <textarea id="messsage" placeholder="Your Message" ng-model="user.message" name="message" required></textarea><br />
+        <span style="color:red" ng-show="contactForm.message.$dirty && contactForm.message.$invalid">
+        <span ng-show="contactForm.message.$error.required">Message is required.</span>
+        </span>
+        <input type="submit" ng-click="submitForm()" ng-disabled="contactForm.name.$dirty && contactForm.name.$invalid || contactForm.email.$dirty && contactForm.email.$invalid || contactForm.message.$dirty && contactForm.message.$invalid" >
+    </form>
     <footer>
         <ul class="socialMedia">
             <li ng-repeat="socialMediaInfo in socialMediaInfo">

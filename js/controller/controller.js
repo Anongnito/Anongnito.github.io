@@ -26,11 +26,14 @@
             if($scope.homepageVisited == false) {
                 document.getElementsByClassName('name')[0].className += (' nameFadeIn');
                 document.getElementsByClassName('swissKnife')[0].className += (' swissKnifeFadeIn');
+                $('nav').css('top', '-100px').addClass('navMovement');
+
             } else {
                 document.getElementsByClassName('name')[0].className += (' nameLoaded');
                 document.getElementsByClassName('swissKnife')[0].className += (' swissKnifeLoaded');
                 document.getElementById('intro').className -= (' logoFadeIn');
                 document.getElementById('intro').style.opacity = 1;
+                $('nav').css('top', '0px').removeClass('navMovement');
 
             }
             frontpageService.setFrontpageState();
@@ -85,6 +88,34 @@
     app.controller('contact', function($scope, contactInfoService, socialMediaService) {
         $scope.contactInfo = [];
         $scope.socialMediaInfo = [];
+
+        $scope.user = [{
+            email: $scope.email,
+            name: $scope.name,
+            message: $scope.message
+        }];
+        $scope.submitForm = function(){
+            $.ajax({
+                type:"POST",
+                data: {
+                    email: $scope.user.email,
+                    name: $scope.user.name,
+                    message: $scope.user.message
+                },
+                url: window.location.href + "emailSender.php",
+                success: function() {
+                    console.log('success');
+                    console.log('email:' + $scope.user.email);
+                    console.log('name:' + $scope.user.name);
+                    console.log('message:' + $scope.user.message);
+                },
+                error: function() {
+                    console.log('FAIL')
+
+                }
+            });
+        };
+
 
         init();
 

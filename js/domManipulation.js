@@ -48,18 +48,8 @@ $(document).ready(function() {
             $('body').css('overflow-y', 'scroll');
         } else {
             menuElement.eq(0).find('h1').addClass('active');
-            $('nav').css('top', '-100px').addClass('navMovement');
             $('#intro').css('display', 'block');
             $('body').css('overflow-y', 'hidden');
-            $('#intro').one('webkitAnimationEnd oanimationend MSAnimationEnd animationend', function() {
-                $('#intro').css('opacity', '1').removeClass('logoFadeIn');
-            });
-            $('.name').one('webkitAnimationEnd oanimationend MSAnimationEnd animationend', function() {
-                $('.name').addClass('nameLoaded').removeClass('nameFadeIn fontShadow');
-            });
-            $('.swissKnife').one('webkitAnimationEnd oanimationend MSAnimationEnd animationend', function() {
-                $('.swissKnife').addClass('swissKnifeLoaded').removeClass('swissKnifeFadeIn fontShadow')
-            });
             videoControls();
         }
     }
@@ -69,22 +59,35 @@ $(document).ready(function() {
             value = menuElement.eq(1).find('img').attr('src');
             newValue = value.replace('Normal', 'Active');
             menuElement.eq(1).find('img').attr('src', newValue);
+            $('#intro').css('display', 'none');
+            $('body').css('overflow-y', 'scroll');
+
+
         } else if(window.location.href.indexOf('/portfolio') > 0) {
             menuElement.eq(2).find('h1').addClass('active');
             value = menuElement.eq(2).find('img').attr('src');
             newValue = value.replace('Normal', 'Active');
             menuElement.eq(2).find('img').attr('src', newValue);
+            $('#intro').css('display', 'none');
+            $('body').css('overflow-y', 'scroll');
+
+
         } else if(window.location.href.indexOf('/contact') > 0) {
             menuElement.eq(3).find('h1').addClass('active');
             value = menuElement.eq(3).find('img').attr('src');
             newValue = value.replace('Normal', 'Active');
             menuElement.eq(3).find('img').attr('src', newValue);
+            $('#intro').css('display', 'none');
+            $('body').css('overflow-y', 'hidden');
+
+
         } else {
             menuElement.eq(0).find('h1').addClass('active');
             value = menuElement.eq(0).find('img').attr('src');
             newValue = value.replace('Normal', 'Active');
             menuElement.eq(0).find('img').attr('src', newValue);
             $('nav').css('top', '-100px').addClass('navMovement');
+            $('#intro').css('display', 'block');
         }
     }
 
