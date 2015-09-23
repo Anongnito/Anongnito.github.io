@@ -39,11 +39,12 @@
             frontpageService.setFrontpageState();
         }
     });
-    app.controller('about', function($scope) {
+    app.controller('about', function($scope, aboutPageService) {
+        $scope.aboutPageText = [];
         init();
 
         function init() {
-
+            $scope.aboutPageText = aboutPageService.getText();
         }
     });
     app.controller('portfolio', function($scope, portfolioService, $modal, portfolioContentService) {

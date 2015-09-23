@@ -4,6 +4,7 @@
     -o-animation: 4s logo-fade-in;
     animation: 4s logo-fade-in;
     -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+    -moz-animation-delay: 5s;
     animation-delay: 5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -21,6 +22,7 @@
     animation-name: logo-fade-in, colorChange, fontShadow;
     animation-duration: 2s, 2s, 2s;
     -webkit-animation-delay:  1.5s, 5s, 7s; /* Chrome, Safari, Opera */
+    -moz-animation-delay:  1.5s, 5s, 7s;
     animation-delay:  1.5s, 5s, 7s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -36,6 +38,7 @@
     animation-name: logo-fade-in, fontShadow;
     animation-duration: 2s, 4s;
     -webkit-animation-delay: 3s, 6s; /* Chrome, Safari, Opera */
+    -moz-animation-delay: 3s, 6s;
     animation-delay:  3s, 6s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -50,6 +53,7 @@
     -o-animation: 4s fontShadow;
     animation: 4s fontShadow;
     -webkit-animation-delay: 3.5s; /* Chrome, Safari, Opera */
+    -moz-animation-delay: 3.5s;
     animation-delay: 3.5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -63,6 +67,7 @@
     -o-animation: 0.5s nav-slide-in;
     animation: 0.5s nav-slide-in;
     -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+    -moz-animation-delay: 5s; /* Chrome, Safari, Opera */
     animation-delay: 5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;

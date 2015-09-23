@@ -1,22 +1,7 @@
 <section id="about" class="mainContainer">
-
-    <ul>
-    <li class="section" id="section1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae quam nec nibh fermentum mattis in eget
-            felis. Suspendisse id nibh est. Nunc tempor massa non ipsum rhoncus, aliquam dictum magna feugiat. Phasellus
-            urna nulla, dictum vitae bibendum ac, convallis elementum massa.</p>
-    </li>
-
-    <li class="section" id="section2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae quam nec nibh fermentum mattis in eget
-            felis. Suspendisse id nibh est. Nunc tempor massa non ipsum rhoncus, aliquam dictum magna feugiat. Phasellus
-            urna nulla, dictum vitae bibendum ac, convallis elementum massa.</p>
-    </li>
-        <li class="section" id="section3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae quam nec nibh fermentum mattis in eget
-                felis. Suspendisse id nibh est. Nunc tempor massa non ipsum rhoncus, aliquam dictum magna feugiat. Phasellus
-                urna nulla, dictum vitae bibendum ac, convallis elementum massa.</p>
-        </li>
-    </ul>
-
+    <div class="section" ng-repeat="aboutPageText in aboutPageText">
+        <h1>{{aboutPageText.heading}}</h1>
+        <p>{{aboutPageText.text}}</p>
+        <hr>
+    </div>
 </section>
